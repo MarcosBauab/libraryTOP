@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+}
+body{
+    color: white;
+    background-color: rgb(14, 14, 65);
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid whitesmoke;
+
+}
+.cell{
+    padding: 64px;
+
+    border: 2px solid black;
+
+    box-shadow: -2px -4px 0px 0px #0006 inset, 2px 2px 0px 0px #FFF7 inset ;
+}
+
+/*Header*/
+header{
+
+    display: flex;
+    justify-content: space-between;
+
+    border: 1px solid whitesmoke;
+
+    margin-bottom: 24px;
+
+    padding: 8px 16px;
+}
+
+/*Main*/
+main{
+
+}
+
+/*FOOTER*/
+footer{
+    display: flex;
+
+    gap: 8px;
+}
+footer p {
+    font-weight: bold;
+}
