@@ -22,7 +22,6 @@ body{
     justify-content: center;
     align-items: center;
 
-    border: 1px solid whitesmoke;
 
 }
 .cell{
@@ -32,12 +31,16 @@ body{
 
     box-shadow: -2px -4px 0px 0px #0006 inset, 2px 2px 0px 0px #FFF7 inset ;
 }
+.none{
+    display: none;
+}
 
 /*Header*/
 header{
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     border: 1px solid whitesmoke;
 
@@ -45,11 +48,50 @@ header{
 
     padding: 8px 16px;
 }
+button {
+    display: inline-block;
+    background-color: #7b38d8;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+button:hover {
+    background-color: rgb(14, 14, 65);
+}
+button:hover span {
+    padding-right: 25px;
+}
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
 
 /*Main*/
 main{
-
+    display: flex;
+    transition: all 0.2s ease-in-out;
 }
+
+
 
 /*FOOTER*/
 footer{
@@ -59,4 +101,12 @@ footer{
 }
 footer p {
     font-weight: bold;
+}
+
+footer a{
+    color: white;
+    transition: .3s;
+}
+footer a:hover{
+    color: #7b38d8;
 }
